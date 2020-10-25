@@ -1,0 +1,50 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+     <table>
+          <tr>
+               <td>
+                    <label>
+                         City:
+                         <input type="text" formControlName="city">
+                    </label>
+               </td>
+          </tr>
+          <tr>
+               <td><label>
+                         Start Date:
+                         <input type="text" formControlName="start_date">
+                    </label>
+               </td>
+          </tr>
+          <tr>
+               <td><label>
+                         End Date:
+                         <input type="text" formControlName="end_date">
+                    </label>
+               </td>
+          </tr>
+          <tr>
+               <td><label>
+                         Price:
+                         <input type="text" formControlName="price">
+                    </label>
+               </td>
+          </tr>
+          <tr>
+               <td><label>
+                         Status:
+                         <input type="text" formControlName="status">
+                    </label>
+               </td>
+          </tr>
+          <tr>
+               <td><label>
+                         Color:
+                         <input type="text" formControlName="color">
+                    </label>
+               </td>
+          </tr>
+          <tr>
+               <td> <button type="submit" [disabled]="!profileForm.valid">Submit</button></td>
+          </tr>
+     </table>
+</form>
